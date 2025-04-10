@@ -1,0 +1,32 @@
+{
+    "1fa0dd68-5069-436c-9a7d-3b54c340f1fa": {
+        "id": "6a627b5a-13d1-4615-b67b-5925711bde9d",
+        "name": "Supabase Auth",
+        "designId": "567d149f-22b7-40d9-9421-5f8ebde831e0",
+        "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduZGd5ZnZ4eWp2bGNzanduZnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjE1NDcsImV4cCI6MjA1OTc5NzU0N30.ymlAwUY3LKfmAuDs2JGmKEJuyCh2iianJgoWXTrH_nw",
+            "projectUrl": "https://wndgyfvxyjvlcsjwnfum.supabase.co"
+        }
+    },
+    "2bd1c688-31c5-443e-ae25-59aa5b6431fb": {
+        "id": "a59dd7c0-f2c1-44b4-bcb9-3f0a5f805cd4",
+        "name": "REST API",
+        "designId": "567d149f-22b7-40d9-9421-5f8ebde831e0",
+        "pluginId": "2bd1c688-31c5-443e-ae25-59aa5b6431fb",
+        "publicData": {}
+    },
+    "f9ef41c3-1c53-4857-855b-f2f6a40b7186": {
+        "id": "d2edda0c-bad0-4a2c-8b59-90459d34918e",
+        "name": "Supabase",
+        "designId": "567d149f-22b7-40d9-9421-5f8ebde831e0",
+        "pluginId": "f9ef41c3-1c53-4857-855b-f2f6a40b7186",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduZGd5ZnZ4eWp2bGNzanduZnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjE1NDcsImV4cCI6MjA1OTc5NzU0N30.ymlAwUY3LKfmAuDs2JGmKEJuyCh2iianJgoWXTrH_nw",
+            "projectUrl": "https://wndgyfvxyjvlcsjwnfum.supabase.co",
+            "realtimeTables": {
+                "alunos": true
+            }
+        }
+    }
+}
