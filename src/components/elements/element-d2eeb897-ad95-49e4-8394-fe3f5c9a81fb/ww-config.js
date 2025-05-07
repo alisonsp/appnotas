@@ -15,16 +15,16 @@ export default {
                 "headerFontFamily",
             ],
             [
-                "rowBackgroundColor",
                 "rowTitle",
+                "rowBackgroundColor",
                 "rowAlternateColor",
                 "rowHoverColor",
                 "rowVerticalPaddingScale",
-                "selectedRowBackgroundColor",
             ],
             ["columnTitle", "columnHoverHighlight", "columnHoverColor"],
-            ["cellTitle", "cellColor", "cellFontFamily", "cellFontSize"],
+            ["cellTitle", "cellColor", "cellFontFamily", "cellFontSize", "cellSelectionBorderColor"],
             ["menuTitle", "menuTextColor", "menuBackgroundColor"],
+            ["selectionTitle", "selectedRowBackgroundColor", 'selectionCheckboxColor', 'focusShadow', 'checkboxUncheckedBorderColor'],
             [
                 "actionTitle",
                 "actionColor",
@@ -75,7 +75,15 @@ export default {
                 row: null,
             },
             getTestEvent: "getSelectionTestEvent",
-        }
+        },
+        {
+            name: "filterChanged",
+            label: { en: "On Filter Changed" },
+        },
+        {
+            name: "sortChanged",
+            label: { en: "On Sort Changed" },
+        },
     ],
     properties: {
         headerTitle: {
@@ -106,6 +114,11 @@ export default {
         actionTitle: {
             type: "Title",
             label: "Action",
+            editorOnly: true,
+        },
+        selectionTitle: {
+            type: "Title",
+            label: "Selection",
             editorOnly: true,
         },
         layout: {
@@ -274,6 +287,18 @@ export default {
             bindable: true,
             bindingValidation: { markdown: "font-size", type: "string", cssSupports: "font-size" },
         },
+        cellSelectionBorderColor: {
+            type: "Color",
+            label: "Selection Border Color",
+            options: {
+                nullable: true,
+            },
+            responsive: true,
+            bindable: true,
+            states: true,
+            classes: true,
+            bindingValidation: { markdown: "color", type: "string", cssSupports: "color" },
+        },
         columnHoverHighlight: {
             type: "OnOff",
             label: "Hover Highlight",
@@ -346,6 +371,39 @@ export default {
             propertyHelp: {
                 tooltip: `Should be a semi-transparent color to allow the background color to show through.`,
             },
+        },
+        selectionCheckboxColor: {
+            type: "Color",
+            label: "Selection Checkboxes Color",
+            options: {
+                nullable: true,
+            },
+            responsive: true,
+            bindable: true,
+            states: true,
+            classes: true,
+            bindingValidation: { markdown: "color", type: "string", cssSupports: "color" },
+        },
+        checkboxUncheckedBorderColor: {
+            type: "Color",
+            label: "Checkbox Unchecked Border Color",
+            options: {
+                nullable: true,
+            },
+            responsive: true,
+            bindable: true,
+            states: true,
+            classes: true,
+            bindingValidation: { markdown: "color", type: "string", cssSupports: "color" },
+        },
+        focusShadow: {
+            type: "Shadows",
+            label: "Focus Shadow",
+            responsive: true,
+            bindable: true,
+            states: true,
+            classes: true,
+            bindingValidation: { markdown: "shadow", type: "string", cssSupports: "shadow" },
         },
         rowVerticalPaddingScale: {
             type: "Number",
@@ -844,5 +902,51 @@ export default {
             bindable: true,
             defaultValue: true,
         },
+        initialFilters: {
+            label: { en: "Initial Filters" },
+            type: "RawObject",
+            section: "settings",
+            bindable: true,
+            defaultValue: null,
+            bindingValidation: {
+                type: "object",
+                tooltip: "An object representing the initial filter model",
+            },
+        },
+        initialSort: {
+            label: { en: "Initial Sort" },
+            type: "RawObject",
+            section: "settings",
+            bindable: true,
+            defaultValue: null,
+            bindingValidation: {
+                type: "array",
+                tooltip: "An array representing the initial sort model",
+            },
+        },
+        lang: {
+            label: { en: "Language" },
+            type: "TextSelect",
+            section: "settings",
+            bindable: true,
+            options: {
+                options: [
+                    { value: "en", label: "English", default: true },
+                    { value: "fr", label: "French" },
+                    { value: "es", label: "Spanish" },
+                    { value: "de", label: "German" },
+                    { value: "pt", label: "Portuguese" },
+                    { value: "custom", label: "Custom" },
+                ],
+            },
+        },
+        localeText: {
+            label: { en: "Locale texts" },
+            type: "RawObject",
+            section: "settings",
+            bindable: true,
+            defaultValue: {},
+            hidden: (content) => content.lang !== "custom",
+        }
     },
 };
