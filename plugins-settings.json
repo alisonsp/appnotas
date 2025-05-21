@@ -22,9 +22,11 @@
             "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduZGd5ZnZ4eWp2bGNzanduZnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjE1NDcsImV4cCI6MjA1OTc5NzU0N30.ymlAwUY3LKfmAuDs2JGmKEJuyCh2iianJgoWXTrH_nw",
             "projectUrl": "https://wndgyfvxyjvlcsjwnfum.supabase.co",
             "realtimeTables": {
-                "turma": true,
+                "nota": true,
+                "roles": true,
                 "alunos": true,
-                "responsavel": true
+                "materia": true,
+                "matricula": true
             }
         }
     },
@@ -35,9 +37,14 @@
         "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
         "publicData": {
             "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduZGd5ZnZ4eWp2bGNzanduZnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjE1NDcsImV4cCI6MjA1OTc5NzU0N30.ymlAwUY3LKfmAuDs2JGmKEJuyCh2iianJgoWXTrH_nw",
+            "roleTable": "roles",
             "projectUrl": "https://wndgyfvxyjvlcsjwnfum.supabase.co",
+            "userRoleTable": "userRoles",
+            "roleTableNameColumn": "name",
             "afterForbiddenPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470",
-            "afterNotSignInPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470"
+            "afterNotSignInPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470",
+            "userRoleTableRoleColumn": "roleId",
+            "userRoleTableUserColumn": "userId"
         }
     }
 }
