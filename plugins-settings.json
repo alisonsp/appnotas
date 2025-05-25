@@ -1,21 +1,4 @@
 {
-    "1fa0dd68-5069-436c-9a7d-3b54c340f1fa": {
-        "id": "6a627b5a-13d1-4615-b67b-5925711bde9d",
-        "name": "Supabase Auth",
-        "designId": "567d149f-22b7-40d9-9421-5f8ebde831e0",
-        "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
-        "publicData": {
-            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduZGd5ZnZ4eWp2bGNzanduZnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjE1NDcsImV4cCI6MjA1OTc5NzU0N30.ymlAwUY3LKfmAuDs2JGmKEJuyCh2iianJgoWXTrH_nw",
-            "roleTable": "roles",
-            "projectUrl": "https://wndgyfvxyjvlcsjwnfum.supabase.co",
-            "userRoleTable": "userRoles",
-            "roleTableNameColumn": "name",
-            "afterForbiddenPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470",
-            "afterNotSignInPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470",
-            "userRoleTableRoleColumn": "roleId",
-            "userRoleTableUserColumn": "userId"
-        }
-    },
     "9c40819b-4a8f-468f-9ba5-4b9699f3361f": {
         "id": "42c1534e-1d8f-434c-b385-0469c134077d",
         "name": "Charts",
@@ -45,6 +28,23 @@
                 "materia": true,
                 "matricula": true
             }
+        }
+    },
+    "1fa0dd68-5069-436c-9a7d-3b54c340f1fa": {
+        "id": "6a627b5a-13d1-4615-b67b-5925711bde9d",
+        "name": "Supabase Auth",
+        "designId": "567d149f-22b7-40d9-9421-5f8ebde831e0",
+        "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InduZGd5ZnZ4eWp2bGNzanduZnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjE1NDcsImV4cCI6MjA1OTc5NzU0N30.ymlAwUY3LKfmAuDs2JGmKEJuyCh2iianJgoWXTrH_nw",
+            "roleTable": "roles",
+            "projectUrl": "https://wndgyfvxyjvlcsjwnfum.supabase.co",
+            "userRoleTable": "userRoles",
+            "roleTableNameColumn": "name",
+            "afterForbiddenPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470",
+            "afterNotSignInPageId": "989810b4-6ec5-417b-9a54-c1a4e28ef470",
+            "userRoleTableRoleColumn": "roleId",
+            "userRoleTableUserColumn": "userId"
         }
     }
 }
